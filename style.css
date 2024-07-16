@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #0a0909;
+    color: #0a0909;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( #0b0540, #0a0909);
+    color: #fff;
+    box-shadow: 0 1px 10px 3px rgb(217, 218, 222);
+}
+
+.logo{
+    text-align: center;
+    padding: 60px;
+}
+
+.logo h1{
+    font-size: 60px;
+}
+
+.logo span{
+    color: #1504c8;
+}
+
+.logo p{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.logo li{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #0f5ee6;
+    font-size: 18px;
+    margin: 0 1.5rem;
+    padding: 2px 0;
+}
+
+ul li a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: 0.7s;
+}
+
+ul li a:active{
+    color: #03f6f2;
+    border-bottom: 2px solid #0acaf5;
+}
+
+main{
+    max-width: 100%;
+    display: flex;
+}
+
+.card{
+    max-width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #f9f3f3;
+    box-shadow: 0 4px 8px 0 rgba(245, 242, 242, 0.2);
+}
+
+.card h1{
+    color: #1504c8;
+    text-align: center;
+}
+
+.card h2{
+    color: #1504c8;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.gambar img{
+    padding-top: 10px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.chil-card{
+    display: flex;
+    max-width: 90%;
+    margin: 15px auto;
+}
+
+.carld{
+    border: 3px solid #1504c8;
+    border-radius: 10px;
+    background-color: #0c0c12;
+    margin: 0 10px;
+    padding: 3px;
+    flex: 1;
+}
+
+.carld .kepala-1{
+    height: 200px;
+    background-image: url(/assets/img/images\ \(1\).jpeg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.carld .kepala-2{
+    height: 200px;
+    background-image: url(/assets/img/images.jpeg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.carld .kepala-3{
+    height: 200px;
+    background-image: url(/assets/img/Katak-Pohon.png);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.carld .content{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.judul{
+    color: #1504c8;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+.content h2{
+    color: #1504c8;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+#content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    display: flex;
+    width: 100%;
+    flex: 2;
+    margin-top: 50px;
+}
+
+.profile{
+    text-align: center;
+    color: #fff;
+}
+
+figure img{
+    width: 40%;
+    max-height:10%;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px;
+}
+
+footer{
+    background-color: #0a0909;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside{
+        align-items: center;
+    }
+    .chil-card{
+        flex-direction: column;
+    }
+    .carld{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li a{
+        margin: 1rem auto;
+    }
+}
+
